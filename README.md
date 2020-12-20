@@ -1,6 +1,6 @@
 # note-taker
 
-This application can be used to write, save, and delete notes. It uses an express backend and saves and retrieves note data from a JSON file. Here is a link to the app deployed on [Heroku](https://note-taker-by-ec.herokuapp.com)
+This application can be used to write, save, and delete notes. It uses an express backend and saves and retrieves note data from a JSON file. Here is a link to the app deployed on [Heroku](https://note-taker-by-ec.herokuapp.com).
 
 
 ## Table of Contents 
