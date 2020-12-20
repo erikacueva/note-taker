@@ -27,17 +27,25 @@ module.exports = function (app) {
     res.json(JSON.stringify(notes));
   });
 
+ 
 
   app.delete("/api/notes/:id", function (req, res) {
-    let targetNote = req.params.id;
-    notes.splice(targetNote - 1, 1);
-    targetNote((obj, i) => {
-      obj.targetNote = i + 1; 
+    let noteDelete = req.params.id;
+    let nn = JSON.parse(data);
+    nn = noteDelete.filter(function(notes){
+      if (nn != notes.nn) {
+        return true;
+      }
+      else {
+        return false;
+      };
+    }); 
+      fs.writeFile("notes.html", JSON.stringify(notes), (e) => {
+        if (e) throw e;
+      });
+      res.json(JSON.stringify(notes));
     });
-    fs.writeFile("notes.html", JSON.stringify(notes), function(){
-      res.json(notes);
-    });
-  });
+  
 
   //get the data - readFile
   //modify the data - filter or ad new note
