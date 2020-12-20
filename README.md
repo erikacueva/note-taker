@@ -14,7 +14,7 @@ This application can be used to write, save, and delete notes. It uses an expres
 In order to use this application, users must have Node.js installed on their machine. The following commands launch the application from the terminal: 
   ```bash
 npm i
-node index
+node server.js
 ```
 
 
